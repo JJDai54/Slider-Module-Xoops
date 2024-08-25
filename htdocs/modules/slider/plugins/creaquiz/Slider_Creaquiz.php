@@ -17,7 +17,7 @@
  * @package        slider
  * @since          1.0
  * @min_xoops      2.5.9
- * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<http://jubile.fr>
+ * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<https://xoopsfr.kiolo.fr>>
  */
 /*
 CREATE TABLE `creaquiz_categories` (
@@ -64,7 +64,6 @@ $this->options['captionAll'] = _MB_SLD_CREAQUIZ_ALL_CAT; //libellé spécifique au
     return $mainMenu;
 
 }
-    
 
   } // fin de la classe
     

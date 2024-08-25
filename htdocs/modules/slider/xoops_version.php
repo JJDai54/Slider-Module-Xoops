@@ -17,7 +17,7 @@
  * @package        slider
  * @since          1.0
  * @min_xoops      2.5.9
- * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<http://jubile.fr>
+ * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<https://xoopsfr.kiolo.fr>>
  */
 
 // 
@@ -33,7 +33,7 @@ $modversion = [
     'description'         => _MI_SLIDER_DESC,
     'author'              => 'JJDai',
     'author_mail'         => 'jjdelalandre@orange.fr',
-    'author_website_url'  => 'http://jubile.fr',
+    'author_website_url'  => 'https://xoopsfr.kiolo.fr>',
     'author_website_name' => 'Origami du monde',
     'credits'             => 'XOOPS Development Team',
     'license'             => 'GPL 2.0 or later',

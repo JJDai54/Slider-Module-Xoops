@@ -17,7 +17,7 @@
  * @package        slider
  * @since          1.0
  * @min_xoops      2.5.9
- * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<http://jubile.fr>
+ * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<https://xoopsfr.kiolo.fr>>
  */
 
 /*
@@ -103,12 +103,14 @@ $this->options['captionAll'] = _MB_SLD_WGGALLERY_ALL_CAT;
 
 ////////////////////////
     //cet item n'est aficher que si aucun album n'est afficher
-    //sinon àa ferait doublon avec l'item du sous menu des albums
+    //sinon ça ferait doublon avec l'item du sous menu des albums
     if (in_array(WGGALLERY_XBOOTSTRAP_MANAGE_ALBUMS, $globalPermsIds)){
       $mainMenu['manage_albums']['id'] = $h++;
       $mainMenu['manage_albums']['lib'] = _MB_SLD_WGGALLERY_MANAGE_ALBUMS;
       $mainMenu['manage_albums']['url'] = $moduleUrl . '/albums.php';
     }
+
+ /* a réactiver si besoin    
     if (in_array(WGGALLERY_XBOOTSTRAP_NEW_ALBUM, $globalPermsIds)){
       $mainMenu['new_album']['id'] = $h++;
       $mainMenu['new_album']['lib'] = _MB_SLD_WGGALLERY_NEW_ALBUM;
@@ -120,7 +122,7 @@ $this->options['captionAll'] = _MB_SLD_WGGALLERY_ALL_CAT;
       $mainMenu['search_img']['lib'] = _MB_SLD_WGGALLERY_SEARCH_IMG;
       $mainMenu['search_img']['url'] = $moduleUrl . '/search.php';
     }
-    
+*/    
     return $mainMenu;
 
 }

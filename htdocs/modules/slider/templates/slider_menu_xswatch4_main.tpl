@@ -1,8 +1,8 @@
+<{*
 <{if $smarty.const.SLIDER_SHOW_TPL_NAME==1}>
 <div style="text-align: center; background-color: black;"><span style="color: yellow;">Template : <{$smarty.template}></span></div>
 <{/if}>
-<{*
-<{assign var="$catOk" value=($block.module.nbCatItems > 0)}>
+<{assign var="catOk" value=($block.module.nbCatItems > 0)}>
 *}>
 
 
@@ -30,7 +30,7 @@
   
               <{/foreach}>
       
-            <{if $block.module.nbCatItems > 0}><hr><{/if}>     
+            <{* <{if $block.module.nbCatItems > 0}><hr><{/if}> zzz *}>     
 
       </div>
       </li>

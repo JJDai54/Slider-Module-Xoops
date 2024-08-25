@@ -17,7 +17,7 @@
  * @package        xbootstrap
  * @since          1.0
  * @min_xoops      2.5.9
- * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<http://jubile.fr>
+ * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<https://xoopsfr.kiolo.fr>>
  */
 
 use Xmf\Request;
@@ -48,7 +48,6 @@ switch ($op) {
         // ceux non actif ne sont pas supprimés de la table, 
         // ce qui permet éventuellementderécupérer les paraametres lors de la réactivation
         $themesHandler->updateThemesValid($clearTblBefore);
-        
         
 		// Define Stylesheet
 		$GLOBALS['xoTheme']->addStylesheet($style, null);
@@ -91,6 +90,7 @@ switch ($op) {
 		} else {
 			$GLOBALS['xoopsTpl']->assign('error', _AM_SLIDER_THEREARENT_THEMES);
 		}
+//exit ("ICI-" . rand(100, 999));        
 		break;
         
 	case 'save':
@@ -222,4 +222,5 @@ include "uploader.php";
         \redirect_header('themes.php?op=list', 2, _AM_SLIDER_FORM_OK);
 		break;
 }
+
 require __DIR__ . '/footer.php';

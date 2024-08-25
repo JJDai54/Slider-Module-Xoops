@@ -20,7 +20,7 @@ namespace XoopsModules\Slider;
  * @package        slider
  * @since          1.0
  * @min_xoops      2.5.9
- * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<http://jubile.fr>
+ * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<https://xoopsfr.kiolo.fr>>
  */
 
 use XoopsModules\Slider;
@@ -138,6 +138,8 @@ class Slides extends \XoopsObject
         //Selection d'un image locale dans l'explorateur
         $upload_size = $helper->getConfig('maxsize_image'); 
         $inpLoadImg = new \XoopsFormFile(_AM_SLIDER_SLIDE_TO_LOAD, 'sld_image', $upload_size);
+//        $inpLoadImg->setExtra('accept="image/png, image/jpeg, image/gif"');
+
 /*
 */        
 

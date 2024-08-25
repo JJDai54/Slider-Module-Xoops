@@ -17,7 +17,7 @@
  * @package        slider
  * @since          1.0
  * @min_xoops      2.5.9
- * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<http://jubile.fr>
+ * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<https://xoopsfr.kiolo.fr>>
  */
 
 include_once __DIR__ . '/common.php';
@@ -238,6 +238,6 @@ define('_AM_SLIDER_THEME_JUMBOTRON', "Jumbotron");
 define('_AM_SLIDER_THEME_DESACTIVER_JUMBOTRON', "Désactiver Jumbotron (A propos de nous)");
 define('_AM_SLIDER_THEME_ACTIVER_JUMBOTRON', "Activer Jumbotron (A propos de nous)");
 define('_AM_SLIDER_ALL_SLIDES', "Total slides");
-
+define('_AM_SLIDER_ORIGINAL', "Slider original");
 
 // ---------------- End ----------------

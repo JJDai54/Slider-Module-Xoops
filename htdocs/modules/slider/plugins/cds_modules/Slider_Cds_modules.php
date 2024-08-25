@@ -17,7 +17,7 @@
  * @package        slider
  * @since          1.0
  * @min_xoops      2.5.9
- * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<http://jubile.fr>
+ * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<https://xoopsfr.kiolo.fr>>
  */
 
 /*
@@ -68,8 +68,8 @@ public function getMainMenu(){
       $mainMenu['Facebook']['url'] = "https://www.facebook.com/Conseil-Des-Sages-De-Sainte-Genevi%C3%A8ve-Des-Bois-120796678500074/";
       $mainMenu['Facebook']['lib'] = _MB_SLD_CDS_MODULES_FACEBOOK;
     
-      $mainMenu['confinement']['url'] = $moduleUrl .  "newbb/viewtopic.php?topic_id=2";
-      $mainMenu['confinement']['lib'] = _MB_SLD_CDS_MODULES_CONFINEMENT;
+      //$mainMenu['confinement']['url'] = $moduleUrl .  "newbb/viewtopic.php?topic_id=2";
+      //$mainMenu['confinement']['lib'] = _MB_SLD_CDS_MODULES_CONFINEMENT;
       
       $module = 'CHGmentions';
       $mainMenu[$module]['url'] = $moduleUrl . $module;

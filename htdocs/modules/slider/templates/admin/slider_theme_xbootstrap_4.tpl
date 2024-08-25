@@ -63,7 +63,7 @@
 
                 <{if $slide.read_more != ''}>
                 <p><a <{if $slide.style_button_name <> ''}>id="<{$slide.style_button_name}>"<{/if}> href="<{$slide.read_more}>" class="btn btn-large btn-primary" target='_blank'>
-                  <{if $slide.button_title <> ''}><{$slide.button_title}><{else}><{$smarty.const.THEME_READMORE}><{/if}>
+                  <{if $slide.button_title <> ''}><{$slide.button_title}><{else}><{$smarty.const._CO_THEME_READMORE}><{/if}>
                 </a></p>
                 <{/if}>                             
 
@@ -79,11 +79,11 @@
         <{* horizontal controls
         <a class="carousel-control-prev" href="#sliderCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"<{$smarty.const.THEME_CONTROL_PREVIOUS}>/span>
+            <span class="sr-only"<{$smarty.const._CO_THEME_CONTROL_PREVIOUS}>/span>
         </a>
         <a class="carousel-control-next" href="#sliderCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"<{$smarty.const.THEME_CONTROL_NEXT}>/span>
+            <span class="sr-only"<{$smarty.const._CO_THEME_CONTROL_NEXT}>/span>
         </a>
         *}>
 </div><!-- .carousel -->  

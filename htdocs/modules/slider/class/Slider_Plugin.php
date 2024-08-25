@@ -27,7 +27,7 @@
  */
 
 //use XoopsModules\Slider;
-
+include_once XOOPS_ROOT_PATH . "/kernel/module.php";
 /**
  * Class Utility
  */
@@ -56,7 +56,7 @@ var $showMainMenu = false;
 var $showAdminmodule = false;
 var $order = 0;
 var $catIsSubmenu = true;
-
+var $showHrBefore  = false;
 //var $params = array();
 
 function __construct ($moduleDirName){
@@ -85,7 +85,8 @@ function __construct ($moduleDirName){
  *
  *********************** */   
 public function getClauseExtra(){
-    return $this->options['where_extra'];  
+    
+    return (isset($this->options['where_extra'] )) ? $this->options['where_extra'] : '';  
 }
 
 /* *************************************
@@ -366,7 +367,7 @@ function getCatItems(&$options = null){
             $$key = $value;
         }
         //La table des categories n'est pas renseignée alors return un tableau vide
-        if(!$table) return array();
+        if(!isset($table)) return array();
         //--------------------------------------------------------
         $asPid = '';
         if (!isset($fld_pid) || $fld_pid == '') {
@@ -451,7 +452,7 @@ if ($table == 'creaquiz_categories'){          //tdmdownloads_cat
               
               $item = array();
               $item['id'] = $id;
-              $item['lib'] = $this->parse_title($topic[$fld_name], $sepTitle) ;
+              $item['lib'] = $this->parse_title($topic[$fld_name], $sepTitle = '-') ;     
               $item['url'] = $url . $id;
               //----------------------------------------
               

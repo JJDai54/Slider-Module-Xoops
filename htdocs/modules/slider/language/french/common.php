@@ -208,3 +208,11 @@ define('_CO_SLIDER_PERIODICITE_BIMONTHLY', 'Une fois tous les deux mois');
 define('_CO_SLIDER_PERIODICITE_QUATER', 'Tous les trimestres');
 define('_CO_SLIDER_PERIODICITE_SEMESTER', 'Une fois par semestre');
 define('_CO_SLIDER_PERIODICITE_YEAR', 'Tous les ans');
+
+define('_CO_THEME_READMORE', 'Lire plus');
+define('_CO_THEME_CONTROL_PREVIOUS', 'Précédent');
+define('_CO_THEME_CONTROL_NEXT', 'Suivant');
+
+
+
+

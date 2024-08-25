@@ -24,10 +24,10 @@
                 <{* <td class='center'><{$style.object}></td> *}>
                 <td class='left'><{$style.css_short}></td>
                 <td class="center  width5">
-                    <a href="styles.php?op=edit&amp;sty_id=<{$style.id}>&amp;start=<{$start}>&amp;limit=<{$limit}>" title="<{$smarty.const._EDIT}>"><img src="<{xoModuleIcons16 edit.png}>" alt="<{$smarty.const._EDIT}> styles" ></a>
-                    <a href="styles.php?op=clone&amp;sty_id_source=<{$style.id}>" title="<{$smarty.const._CLONE}>"><img src="<{xoModuleIcons16 editcopy.png}>" alt="<{$smarty.const._CLONE}> styles" ></a>
+                    <a href="styles.php?op=edit&amp;sty_id=<{$style.id}>&amp;start=<{$start}>&amp;limit=<{$limit}>" title="<{$smarty.const._EDIT}>"><img src="<{xoModuleIcons16}>/edit.png" alt="<{$smarty.const._EDIT}> styles" ></a>
+                    <a href="styles.php?op=clone&amp;sty_id_source=<{$style.id}>" title="<{$smarty.const._CLONE}>"><img src="<{xoModuleIcons16}>/editcopy.png" alt="<{$smarty.const._CLONE}> styles" ></a>
                     <{if $style.id>3}>
-                    <a href="styles.php?op=delete&amp;sty_id=<{$style.id}>" title="<{$smarty.const._DELETE}>"><img src="<{xoModuleIcons16 delete.png}>" alt="<{$smarty.const._DELETE}> styles" ></a>
+                    <a href="styles.php?op=delete&amp;sty_id=<{$style.id}>" title="<{$smarty.const._DELETE}>"><img src="<{xoModuleIcons16}>/delete.png" alt="<{$smarty.const._DELETE}> styles" ></a>
                     <{/if}>
                 </td>
             </tr>

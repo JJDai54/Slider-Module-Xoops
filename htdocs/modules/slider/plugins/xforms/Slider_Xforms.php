@@ -17,7 +17,7 @@
  * @package        slider
  * @since          1.0
  * @min_xoops      2.5.9
- * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<http://jubile.fr>
+ * @author         JJDai - Email:<jjdelalandre@orange.fr> - Website:<https://xoopsfr.kiolo.fr>>
  */
 
 /*
@@ -89,7 +89,8 @@ var $options = array(
  *********************** */   
 public function getClauseExtra(){
     $now = time();
-    $clause = "(form_begin=0 Or '{$now}' >= form_begin) AND (form_end=0 Or '{$now}' <= form_end)";  
+    //le poids doit etre superieur à zéro sinon le formulaire est caché
+    $clause = "(form_begin=0 Or '{$now}' >= form_begin) AND (form_end=0 Or '{$now}' <= form_end) AND form_order>0";  
     return $clause;
 
 }

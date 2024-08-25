@@ -139,9 +139,9 @@ SPAN { FONT:bold 12 Arial; CURSOR:pointer }
                
                 <td class="center  width5">
                     <a href="slides.php?op=edit&amp;sld_id=<{$slide.id}>&<{$paramsList}>" title="<{$smarty.const._EDIT}>">
-                       <img src="<{xoModuleIcons16 edit.png}>" alt="<{$smarty.const._EDIT}> slides" /></a>
+                       <img src="<{xoModuleIcons16}>/edit.png" alt="<{$smarty.const._EDIT}> slides" /></a>
                     <a href="slides.php?op=delete&amp;sld_id=<{$slide.id}>" title="<{$smarty.const._DELETE}>">
-                       <img src="<{xoModuleIcons16 delete.png}>" alt="<{$smarty.const._DELETE}> slides" /></a>
+                       <img src="<{xoModuleIcons16}>/delete.png" alt="<{$smarty.const._DELETE}> slides" /></a>
                 </td>
             </tr>
             <{/foreach}>
